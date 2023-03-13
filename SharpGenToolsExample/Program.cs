@@ -7,4 +7,4 @@ var hello = NativeFunctions.Fourteen();
 
 Console.WriteLine($"Hello {hello}");
 
-//int x = Native.NativeFunctions.Fourteen();
+// Prints out "Hello 14"
