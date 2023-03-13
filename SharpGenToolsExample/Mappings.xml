@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config id="Native" xmlns="urn:SharpGen.Config">
+	<assembly>SharpGenToolsExample</assembly>
+	<namespace>SharpGenToolsExample</namespace>
+	<depends>SharpGen.Runtime</depends>
+	<include-dir override="true">$(THIS_CONFIG_PATH)\..\Native</include-dir>
+
+	<include file="NativeFunctions.h">
+		<attach>Fourteen</attach>
+	</include>
+
+	<extension>
+		<create class="SharpGenToolsExample.NativeFunctions" visibility="public static" />
+	</extension>
+
+	<mapping>
+		<map function="Fourteen" group="SharpGenToolsExample.NativeFunctions" dll='"x64/Debug/Native.dll"' />
+	</mapping>
+</config>
